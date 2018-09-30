@@ -1,0 +1,7 @@
+<h1>All Members</h1>
+<body>
+<% @members.each do |member| %>
+</body>
+<h3><a href="/members<%= member.id %>"><%= member.full_name %></a></h3>
+<p>Email: <%= member.email %></p>
+<% end %>

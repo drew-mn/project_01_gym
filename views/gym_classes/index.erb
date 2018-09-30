@@ -1,0 +1,7 @@
+<h1>All Classes</h1>
+<body>
+<% @gym_classes.each do |gym_class| %>
+</body>
+<h3><a href="/gym_classes<%= gym_class.id %>"><%= gym_class.class_name %></a></h3>
+<p>About <%= gym_class.class_name %>: <%= gym_class.class_description %></p>
+<% end %>
