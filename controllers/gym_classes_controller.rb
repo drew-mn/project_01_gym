@@ -8,7 +8,6 @@ also_reload( '../models/*' )
 
 get '/gym_classes' do
   @gym_classes = Gym_Class.all()
-  @gym_class = Gym_Class.all()
   erb(:"gym_classes/index")
 end
 
@@ -18,19 +17,18 @@ get '/gym_classes/new' do
 end
 
 post '/gym_classes' do
-  @gym_classes = Gym_Class.new(params)
-  @gym_classes.save()
-  erb (:"gym_classes/index")
+  @gym_class = Gym_Class.new(params)
+  @gym_class.save()
+  erb (:"gym_classes/create")
 end
 
 get '/gym_classes/:id' do
-  @gym_classes = Gym_Class.find(params['id'])
-  erb(:"gym_classes/find")
+  @gym_class = Gym_Class.find(params[:id])
+  erb(:"gym_classes/show")
 end
 
 get '/gym_classes/:id/edit' do
-  @gym_class = Gym_Class.all()
-  @gym_classes = Gym_Class.find(params[:id])
+  @gym_class = Gym_Class.find(params[:id])
   erb(:"gym_classes/edit")
 end
 

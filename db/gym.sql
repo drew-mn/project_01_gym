@@ -2,8 +2,6 @@ DROP TABLE bookings;
 DROP TABLE members;
 DROP TABLE gym_classes;
 
-
-
 CREATE TABLE members (
   id SERIAL4 PRIMARY KEY,
   first_name VARCHAR(255),
@@ -14,7 +12,7 @@ CREATE TABLE members (
 CREATE TABLE gym_classes (
   id SERIAL4 PRIMARY KEY,
   class_name VARCHAR(255),
-  class_description VARCHAR(255),
+  class_description TEXT,
   class_time VARCHAR(255),
   class_instructor VARCHAR(255),
   class_spaces INT4

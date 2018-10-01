@@ -2,6 +2,6 @@
 <body>
 <% @members.each do |member| %>
 </body>
-<h3><a href="/members<%= member.id %>"><%= member.full_name %></a></h3>
+<p><a href="/members/<%=member.id %>"><%= member.full_name %></a></p>
 <p>Email: <%= member.email %></p>
 <% end %>

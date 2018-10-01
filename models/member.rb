@@ -33,7 +33,7 @@ class Member
     (first_name, last_name, email) =
     ($1, $2, $3)
     WHERE id = $4"
-    values = [@first_name, @last_name, @email]
+    values = [@first_name, @last_name, @email, @id]
     SqlRunner.run(sql, values)
   end
 

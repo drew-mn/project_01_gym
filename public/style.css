@@ -1,0 +1,126 @@
+/*
+.showbutton {
+  padding:20px 20px;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Helvetica", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  color: white;
+  border-radius: 6px;
+  width: 250px;}
+
+  #EditMember-button {
+    background:#e31837;
+    margin-left: 50px;
+  }
+
+  #DeleteMember-button {
+    background:#e31837;
+    margin-left: 50px;
+  }
+
+  #UpdateMember-button {
+    background:#0079ae;
+  }
+
+  #NewMember-button {
+    background:#0079ae;
+  }
+
+
+
+/* body
+{
+    background-image: url(pizzaimage.gif);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    font-family: "Helvetica", sans-serif;
+    position: relative;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    } */
+
+
+/*
+h1
+{
+    color: white;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 35px;
+    margin-left: -10px;
+}
+
+h2
+{
+    color: white;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: -10px;
+}
+
+p
+{
+    color: white;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 50px;
+
+    /* display: inline-block 
+}
+
+label
+{
+    color: white;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+    font-size: 15px;
+    text-align: left;
+    font-weight: bold;
+    /* margin-top: -10px;
+    margin-left: 30px;
+}
+
+nav
+{
+    color: white;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "Helvetica", sans-serif;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: -35px;
+}
+
+a
+{ text-decoration: none; color:white;
+}
+
+a:link, a:visited {
+  font: bold 11px Arial;
+text-decoration: none;
+background-color: #EEEEEE;
+color: #333333;
+padding: 6px 6px 6px 6px;
+border-top: 1px solid #CCCCCC;
+border-right: 1px solid #333333;
+border-bottom: 1px solid #333333;
+border-left: 1px solid #CCCCCC;
+border-radius: 6px;
+}

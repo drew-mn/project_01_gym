@@ -1,0 +1,14 @@
+<h1>Gym Member</h1>
+
+<p>First Name: <%= @member.first_name() %></p>
+<p>Last Name: <%= @member.last_name() %></p>
+<p>Member Contact: <%= @member.email() %></p>
+
+<br>
+
+<form action="/members/<%= @member.id %>/edit" method="get">
+  <input type="submit" id ='EditMember-button' class='showbutton' value="Edit member">
+</form>
+<form action="/members/<%= @member.id %>/delete" method="post">
+  <input type="submit" id ='DeleteMember-button' class='showbutton'value="Delete member">
+</form>

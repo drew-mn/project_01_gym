@@ -1,6 +1,7 @@
 require('sinatra')
 require('sinatra/contrib/all')
 require('pry')
+require_relative('../models/gym_class')
 require_relative('../models/member')
 also_reload( '../models/*' )
 
@@ -12,22 +13,22 @@ end
 
 get '/members/new' do
   @member = Member.all()
-  erb(:"members/new")
+  erb (:"members/new")
 end
 
 post '/members' do
   @member = Member.new(params)
   @member.save()
-  erb(:"members/index")
+  erb (:"members/create")
 end
 
 get '/members/:id' do
   @member = Member.find(params[:id])
-  erb(:"members/find")
+  erb(:"members/show")
 end
 
 get '/members/:id/edit' do
-  @member = Member.find(params['id'])
+  @member = Member.find(params[:id])
   erb(:"members/edit")
 end
 

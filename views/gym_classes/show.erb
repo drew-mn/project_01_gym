@@ -1,0 +1,17 @@
+<h1>Gym Class</h1>
+
+<p>Class Name: <%= @gym_class.class_name() %></p>
+<p>Class Description: <%= @gym_class.class_description() %></p>
+<p>Class Time: <%= @gym_class.class_time() %></p>
+<p>Instructor: <%= @gym_class.class_instructor() %></p>
+<p>Spaces: <%= @gym_class.class_spaces() %></p>
+
+<br>
+
+<form action="/gym_classes/<%= @gym_class.id %>/edit" method="get">
+  <input type="submit" id ='EditMember-button' class='showbutton' value="Edit Class">
+</form>
+
+<form action="/gym_classes/<%= @gym_class.id %>/delete" method="post">
+  <input type="submit" id ='DeleteMember-button' class='showbutton' value="Delete Class">
+</form>

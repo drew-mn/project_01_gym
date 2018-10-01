@@ -27,7 +27,7 @@ class Gym_Class
 
   def update()
     sql = "UPDATE gym_classes SET (class_name, class_description, class_time, class_instructor, class_spaces) = ($1, $2, $3, $4, $5) WHERE id = $6"
-    values = [@class_name, @class_description, @class_time, @class_instructor, @class_spaces ]
+    values = [@class_name, @class_description, @class_time, @class_instructor, @class_spaces, @id]
     SqlRunner.run(sql, values)
   end
 
