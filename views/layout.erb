@@ -1,23 +1,47 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>All Classes</title>
-  <!-- <link rel="stylesheet" href="/style.css"> -->
+  <title>Programmed Fitness</title>
+   <link rel="stylesheet" type="text/css" href="/style.css">
+
+   <!-- LOGO -->
+ <div class="row">
+   <div class="logo">
+   <img src="/pf_logo2.png">
+ </div>
+
+ <!-- NAV BAR -->
+ <div class="nav">
+
+ <!-- LINKS - CENTER -->
+  <div class="nav-center">
+    <a href="/home" class="active">HOME</a>
+  </div>
+
+<!-- LINKS - LEFT -->
+  <div class="nav-left">
+    <a href="/members">View Members</a>
+    <a href="/members/new">New Member</a>
+    <a href="/gym_classes">View Classes</a>
+  </div>
+<!-- LINKS - RIGHT -->
+  <div class="nav-right">
+    <a href="/gym_classes/new">New Class</a>
+    <a href="/bookings">View Bookings</a>
+    <a href="/bookings/new">New Booking</a>
+  </div>
+
+</div>
+</head>
+
 </head>
 <body>
-  <nav>
-   <ul>
-     <li>
-    <a href='/members'>Show all Members</a>
-    <a href="/members/new">Create New Member</a>
-    <a href='/gym_classes'>Show all Classes</a>
-    <a href="/gym_classes/new">Create New Class</a>
-    <a href='/bookings'>Show all Bookings</a>
-    <a href="/bookings/new">Create New Booking</a>
-   </li>
-   </ul>
- </nav>
-  <%= yield %>
+  <!-- HEADER -->
+  <div class="title">
+  <h1>Programmed [Fitness] </h1>
+</div>
+
+<%= yield %>
 </body>
 </html>

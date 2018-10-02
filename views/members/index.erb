@@ -1,7 +1,29 @@
-<h1>All Members</h1>
+<!-- <h2>All Members</h2>
 <body>
 <% @members.each do |member| %>
 </body>
 <p><a href="/members/<%=member.id %>"><%= member.full_name %></a></p>
 <p>Email: <%= member.email %></p>
-<% end %>
+<% end %> -->
+
+
+<h2>All Members</h2>
+
+<div style="overflow-x:auto;">
+<table>
+  <thead>
+    <tr>
+      <th>Member Name</th>
+      <th>Contact</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @members.each do |member| %>
+    <tr>
+      <td><a href="/members/<%=member.id %>"><%= member.full_name %></td>
+        <td><%= member.email %></td>
+      </tr>
+      <% end %>
+    </tbody>
+</div>
