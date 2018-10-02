@@ -1,11 +1,26 @@
 <h2>Class Bookings</h2>
 
-<p>Member: <%= @booking.member.first_name %> <%= @booking.member.last_name %></p>
-<p>Gym Class: <%= @booking.gym_class.class_name %></p>
-<p>Time: <%= @booking.gym_class.class_time %></p>
-<p>Instructor: <%= @booking.gym_class.class_instructor %></p>
-<br>
+<div style="overflow-x:auto;">
+<table>
+  <thead>
+    <tr>
+      <th>Member</th>
+      <th>Class</th>
+      <th>Time</th>
+      <th>Instructor</th>
+    </tr>
+  </thead>
 
+  <tbody>
+    <tr>
+
+<td><%= @booking.member.first_name %> <%= @booking.member.last_name %></td>
+<td><%= @booking.gym_class.class_name %></td>
+<td><%= @booking.gym_class.class_time %></td>
+<td><%= @booking.gym_class.class_instructor %></td>
+<br>
+<div class="form_container">
 <form action="/bookings/<%= @booking.id %>/delete" method="post">
   <input type="submit" id ='DeleteBooking-button' class='showbutton'value="Delete Booking">
 </form>
+</div>

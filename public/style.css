@@ -95,11 +95,13 @@ body
 h1
 {
     color: #fc5120;
+    /* color: #333; */
     text-transform: uppercase;
     font-size: 57px;
     text-align: center;
     margin-top: 420px;
     margin-left: 105px;
+    letter-spacing: 6px;
 }
 
 h2
@@ -108,8 +110,9 @@ h2
     text-transform: uppercase;
     font-size: 40px;
     text-align: left;
-    margin-top: 40px;
+    margin-top: 15px;
     margin-left: 20px;
+    font-family: "Futura-pt", sans-serif;
 }
 
 h3
@@ -120,6 +123,7 @@ h3
     text-align: center;
     margin-top: 40px;
     margin-left: 20px;
+    font-family: "Futura-pt", sans-serif;
 }
 
 p
@@ -214,16 +218,24 @@ a
 .active
 {
     background-color: lightgrey;
-
 }
 
 /* Logo Styling */
-.logo img
+/* .logo img
 {
     width: 200px;
     height: auto;
     margin: 20px
+} */
+
+.title_text img
+{
+    width: 1100px;
+    height: auto;
+    padding: 20px;
 }
+
+
 
 input {
   width: 50%;
@@ -232,20 +244,57 @@ input {
   box-sizing: border-box;
 }
 
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #fc5120;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type=submit]:hover {
+    background-color: #333333;
+}
+
+.form_container {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 500px;
+  clear: both;
+}
+
+.form_container input {
+  width: 100%;
+  clear: both;
+}
+
+
 .showbutton {
-  padding:20px 20px;
+  padding:15px 15px;
   text-align: center;
-  font-size: 25px;
+  font-size: 15px;
   font-family: "Helvetica", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px;
   margin-left: 30px;
   color: white;
   border-radius: 6px;
-  width: 250px;}
+  width: 100px;
+  background:#fc5120;
+  display: inline-block;} */
 
-  #EditMember-button {
+  /* #EditMember-button {
     background:#fc5120;
     margin-left: 50px;
   }
@@ -280,3 +329,12 @@ input {
   #NewClass-button {
     background:#fc5120;
   }
+
+  #NewBooking-button {
+    background:#fc5120;
+  }
+
+  #DeleteBooking-button {
+    background:#fc5120;
+    margin-left: 50px;
+  } */

@@ -1,13 +1,27 @@
-<h2>Gym Class</h2>
+<h2>Gym Classes</h2>
 
-<p>Class Name: <%= @gym_class.class_name() %></p>
-<p>Class Description: <%= @gym_class.class_description() %></p>
-<p>Class Time: <%= @gym_class.class_time() %></p>
-<p>Instructor: <%= @gym_class.class_instructor() %></p>
-<p>Spaces: <%= @gym_class.class_spaces() %></p>
+<!-- <div style="overflow-x:auto;"> -->
+<table>
+  <thead>
+    <tr>
+      <th>Class Name</th>
+      <th>Class Description</th>
+      <th>Class Time</th>
+      <th>Instructor</th>
+      <th>Spaces</th>
+    </tr>
+  </thead>
 
-<br>
+  <tbody>
+    <tr>
+<td><%= @gym_class.class_name%></td>
+<td><%= @gym_class.class_description%></td>
+<td><%= @gym_class.class_time%></td>
+<td><%= @gym_class.class_instructor%></td>
+<td><%= @gym_class.class_spaces%></td>
 
+
+<div class="form_container">
 <form action="/gym_classes/<%= @gym_class.id %>/edit" method="get">
   <input type="submit" id ='EditMember-button' class='showbutton' value="Edit Class">
 </form>
@@ -15,3 +29,4 @@
 <form action="/gym_classes/<%= @gym_class.id %>/delete" method="post">
   <input type="submit" id ='DeleteMember-button' class='showbutton' value="Delete Class">
 </form>
+</div>

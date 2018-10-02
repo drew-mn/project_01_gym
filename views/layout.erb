@@ -5,11 +5,12 @@
   <title>Programmed Fitness</title>
    <link rel="stylesheet" type="text/css" href="/style.css">
 
-   <!-- LOGO -->
- <div class="row">
-   <div class="logo">
-   <img src="/pf_logo2.png">
+   <!-- LOGO/TITLE -->
+   <div class="row">
+   <div class="title_text">
+   <img src="/pf_title2.png">
  </div>
+</div>
 
  <!-- NAV BAR -->
  <div class="nav">
@@ -22,26 +23,19 @@
 <!-- LINKS - LEFT -->
   <div class="nav-left">
     <a href="/members">View Members</a>
-    <a href="/members/new">New Member</a>
     <a href="/gym_classes">View Classes</a>
+    <a href="/bookings">View Bookings</a>
   </div>
 <!-- LINKS - RIGHT -->
   <div class="nav-right">
+    <a href="/members/new">New Member</a>
     <a href="/gym_classes/new">New Class</a>
-    <a href="/bookings">View Bookings</a>
     <a href="/bookings/new">New Booking</a>
   </div>
 
 </div>
 </head>
-
-</head>
 <body>
-  <!-- HEADER -->
-  <div class="title">
-  <h1>Programmed [Fitness] </h1>
-</div>
-
 <%= yield %>
 </body>
 </html>
