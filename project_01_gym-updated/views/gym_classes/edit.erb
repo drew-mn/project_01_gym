@@ -1,0 +1,26 @@
+<h2>Edit Class</h2>
+<div class="form_container">
+<form action="/gym_classes/<%= @gym_class.id%>" method="post">
+
+  <label for="class-name">Class Name:</label>
+  <input id="class-name" type="text" name="class_name" value= <%= @gym_class.class_name() %> >
+  <br>
+
+  <label for="class-description">Class Description:</label>
+  <input id="class-description" type="text" name="class_description" value= <%= @gym_class.class_description() %> >
+  <br>
+
+  <label for="class_time">Class Time: </label>
+  <input id="class-time" type="text" name="class_time" value= <%= @gym_class.class_time() %> >
+  <br>
+
+  <label for="class-instructor">Class Instructor:</label>
+  <input id="class-instructor" type="text" name="class_instructor" value= <%= @gym_class.class_instructor() %> >
+  <br>
+
+  <label for="class-spaces">Class Spaces:</label>
+  <input id="class-spaces" type="number" name="class_spaces" value= <%= @gym_class.class_spaces() %> >
+  <br>
+
+  <input type="submit" id ='NewClass-button' class='showbutton'value="Update Class">
+</div>

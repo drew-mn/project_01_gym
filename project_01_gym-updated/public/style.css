@@ -1,0 +1,347 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: "Futura", sans-serif;
+    position: relative;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    }
+}
+.row
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Nav Bar background colour */
+.nav {
+    position: relative;
+    background-color: #333;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+/* Styling for Nav Bar links */
+.nav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Futura", sans-serif;
+}
+
+/* Change colour of links on hover */
+.nav a:hover {
+  background-color: #ddd;
+  color: #fc5120;
+}
+
+
+/* Styling for centered link in Nav Bar */
+.nav-center a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fc5120;
+  color: white;
+}
+
+/* Positioning of right/left/center Nav Bar links */
+.nav-right {
+  float: right;
+}
+
+.nav-left {
+  float: left;
+}
+
+@media screen and (max-width: 600px)
+{
+  .nav a, .nav-right {
+    float: none;
+    display: block;
+  }
+
+  .nav-center a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+/* Title and Header styling */
+.title
+{
+    position: absolute;
+    width: 1000px;
+    margin-left: 150px;
+    margin-top: -575px;
+    color: #fc5120;
+    font-family: "Futura", sans-serif;
+}
+
+h1
+{
+    color: #fc5120;
+    /* color: #333; */
+    text-transform: uppercase;
+    font-size: 57px;
+    text-align: center;
+    margin-top: 420px;
+    margin-left: 105px;
+    letter-spacing: 6px;
+}
+
+h2
+{
+    color: #fc5120;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-family: "Futura-pt", sans-serif;
+}
+
+h3
+{
+    color: #fc5120;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-family: "Futura-pt", sans-serif;
+}
+
+p
+{
+    color: black;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 15px;
+}
+
+.index-background {
+  background-image: url(gym_cover2.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-size: 100% 100%;
+  /* background-size: cover; */
+  background-position: center;
+  margin-top: 0px;
+}
+
+table {
+
+    border-collapse: collapse;
+    border-spacing: 10;
+    width: 85%;
+    border: 1px solid #ddd;
+    position: absolute;
+    margin-left: 20px;
+
+}
+
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+ {
+    font-family: "Futura", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 4px;
+    margin-left: 5px
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #414141;
+    color: white;
+
+}
+
+body
+{
+
+}
+
+a
+{
+  text-decoration: none;
+  color: #fc5120;
+}
+
+/* Nav Button styling */
+.button
+{
+    margin-top: 250px;
+    margin-left: 330px;
+}
+
+.btn
+{
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.active
+{
+    background-color: lightgrey;
+}
+
+/* Logo Styling */
+/* .logo img
+{
+    width: 200px;
+    height: auto;
+    margin: 20px
+} */
+
+.title_text img
+{
+    width: 1100px;
+    height: auto;
+    padding: 20px;
+}
+
+
+
+input {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #fc5120;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type=submit]:hover {
+    background-color: #333333;
+}
+
+.form_container {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 500px;
+  clear: both;
+
+
+}
+
+.form_container input {
+  width: 100%;
+  clear: both;
+
+}
+
+
+.showbutton {
+  padding:15px 15px;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Futura-pt", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;}
+  /* margin-bottom: 10px;
+  margin-left: 30px;
+  color: white;
+  border-radius: 6px;
+  width: 100px;
+  background:#fc5120;
+  display: inline-block;} */
+
+    #EditMember-button {
+    background:#fc5120;
+    margin-left: 0px;
+    float: left;
+    margin-right: 10px;
+  } */
+
+  /* #DeleteMember-button {
+    background:#fc5120;
+    margin-left: 50px;
+  }
+
+  #UpdateMember-button {
+    background:#fc5120;
+  }
+
+  #NewMember-button {
+    background:#fc5120;
+  }
+
+  #EditClass-button {
+    background:#fc5120;
+    margin-left: 50px;
+  }
+
+  #DeleteClass-button {
+    background:#fc5120;
+    margin-left: 50px;
+  }
+
+  #UpdateClass-button {
+    background:#fc5120;
+  }
+
+  #NewClass-button {
+    background:#fc5120;
+  }
+
+  #NewBooking-button {
+    background:#fc5120;
+  }
+
+  #DeleteBooking-button {
+    background:#fc5120;
+    margin-left: 50px;
+  } */

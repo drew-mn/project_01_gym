@@ -1,0 +1,34 @@
+<!-- <h2>All Classes</h2>
+<body>
+<% @gym_classes.each do |gym_class| %>
+</body>
+<p><a href="/gym_classes/<%= gym_class.id %>"><%= gym_class.class_name %></a></p>
+<p>About <%= gym_class.class_name %>: <%= gym_class.class_description %></p>
+<p>Time  <%= gym_class.class_time %></p>
+<% end %> -->
+
+<h2>All Classes</h2>
+<!-- https://www.w3schools.com/tags/tag_thead.asp -->
+
+<div style="overflow-x:auto;">
+<table>
+  <thead>
+    <tr>
+      <th>Class Name</th>
+      <th>About</th>
+      <th>Time</th>
+      <th>Instructor</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gym_classes.each do |gym_class| %>
+    <tr>
+      <td><a href="/gym_classes/<%= gym_class.id%>"><%= gym_class.class_name %></td>
+        <td><%= gym_class.class_description %></td>
+        <td><%= gym_class.class_time %></td>
+        <td><%= gym_class.class_instructor %></td>
+      </tr>
+      <% end %>
+    </tbody>
+</div>

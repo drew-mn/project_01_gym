@@ -1,0 +1,25 @@
+<h2>Bookings</h2>
+<!-- https://www.w3schools.com/tags/tag_thead.asp -->
+
+<div style="overflow-x:auto;">
+<table>
+  <thead>
+    <tr>
+      <th>Member</th>
+      <th>Class</th>
+      <th>Time</th>
+      <th>Instructor</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bookings.each do |booking| %>
+    <tr>
+      <td><a href="/bookings/<%= booking.id %>"><%= booking.member.full_name %></td>
+        <td><%= booking.gym_class.class_name %></td>
+        <td><%= booking.gym_class.class_time %></td>
+        <td><%= booking.gym_class.class_instructor %></td>
+      </tr>
+      <% end %>
+    </tbody>
+</div>

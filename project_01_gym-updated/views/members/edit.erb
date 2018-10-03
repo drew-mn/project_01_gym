@@ -1,0 +1,15 @@
+<h2>Edit Member</h2>
+<div class="form_container">
+  <form action="/members/<%= @member.id %>" method="post">
+    <label for="first-name">First Name: </label>
+    <input id="first-name" type="text" name="first_name" value= <%= @member.first_name() %> >
+    <br>
+    <label for="last-name">Last Name: </label>
+    <input id="last-name" type="text" name="last_name" value= <%= @member.last_name() %> >
+    <br>
+    <label for="membership-type">Membership Type: </label>
+    <input id="email" type="text" name="email" value= <%= @member.email() %> >
+    <br>
+    <input type="submit" id ='UpdateMember-button' class='showbutton'value="Update Member">
+  </form>
+</div>

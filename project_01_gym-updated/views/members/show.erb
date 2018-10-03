@@ -1,0 +1,27 @@
+<h2>Gym Member</h2>
+
+<div style="overflow-x:auto;">
+<table>
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Contact Email</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+
+<td><%= @member.first_name%></td>
+<td><%= @member.last_name%></td>
+<td><%= @member.email%></td>
+<br>
+<div class="form_container">
+<form action="/members/<%= @member.id %>/edit" method="get">
+  <input type="submit" id ='EditMember-button' class='showbutton' value="Edit member">
+</form>
+<form action="/members/<%= @member.id %>/delete" method="post">
+  <input type="submit" id ='DeleteMember-button' class='showbutton'value="Delete member">
+</form>
+</div>
